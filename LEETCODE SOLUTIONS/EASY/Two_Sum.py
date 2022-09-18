@@ -1,10 +1,13 @@
-nums.sort()
-l = 0
-r = len(nums)-1
-while(l < r):
-    if nums[l]+nums[r] == target:
-        return [l, r]
-    elif nums[l]+nums[r] > target:
-        r -= 1
-    else:
-        l += 1
+d = {}
+print(d)
+for i, j in enumerate(nums):
+    x = target-j
+    if x in d:
+        return [d[x], i]
+    d[j] = i
+
+'''
+Time Complexity: O(N)
+Space Complexity: O(N)
+
+'''
