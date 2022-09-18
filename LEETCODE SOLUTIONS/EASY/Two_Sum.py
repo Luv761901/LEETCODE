@@ -6,8 +6,5 @@ for i, j in enumerate(nums):
         return [d[x], i]
     d[j] = i
 
-'''
-Time Complexity: O(N)
-Space Complexity: O(N)
-
-'''
+# Time Complexity: O(N)
+# Space Complexity: O(N)
